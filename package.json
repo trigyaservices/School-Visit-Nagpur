@@ -1,0 +1,12 @@
+{
+  "name": "nagpur-school-visit",
+  "version": "2.0.0",
+  "private": true,
+  "description": "SCHOOL VISIT — Complete Dashboard & Automatic Route Planner",
+  "scripts": {
+    "build": "node build.js",
+    "deploy": "node build.js && npx wrangler deploy --assets=./dist",
+    "deploy:pages": "node build.js && npx wrangler pages deploy dist",
+    "start": "npx serve dist -p 8000"
+  }
+}
